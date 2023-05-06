@@ -320,9 +320,9 @@ else()
     string(SUBSTRING ${GIT_SHA1} 1 7 NC_VERSION)
 endif()
 
-set(NC_REPORT_BUGS_TO "https://github.com/yegord/snowman/issues" CACHE STRING "Address for reporting bugs.")
+set(NC_REPORT_BUGS_TO "https://github.com/serhack/snowman/issues" CACHE STRING "Address for reporting bugs.")
 set(NC_LICENSE_NAME "GNU General Public License, version 3 or any later version" CACHE STRING "License name.")
-set(NC_LICENSE_URL "https://github.com/yegord/snowman/blob/master/doc/licenses.asciidoc" CACHE STRING "License URL.")
+set(NC_LICENSE_URL "https://github.com/serhack/snowman/blob/master/doc/licenses.asciidoc" CACHE STRING "License URL.")
 
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/common/Version.cpp.in" "${CMAKE_CURRENT_BINARY_DIR}/common/Version.cpp" @ONLY)
 list(APPEND SOURCES "${CMAKE_CURRENT_BINARY_DIR}/common/Version.cpp")

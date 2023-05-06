@@ -9,14 +9,14 @@ namespace nc {
 
 Branding branding() {
     Branding result;
-
+    /*
     result.setApplicationName(QLatin1String("Nc"));
     result.setApplicationVersion(QLatin1String(version));
     result.setOrganizationDomain(QLatin1String("derevenets.com"));
     result.setOrganizationName(result.organizationDomain());
     result.setLicenseName(licenseName);
     result.setLicenseUrl(licenseUrl);
-    result.setReportBugsTo(reportBugsTo);
+    result.setReportBugsTo(reportBugsTo);*/
 
     return result;
 }

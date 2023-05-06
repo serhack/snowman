@@ -194,5 +194,3 @@ macro(install)
 endmacro(install)
 
 add_subdirectory(3rd-party)
-
-# vim:set et sts=4 sw=4 nospell:

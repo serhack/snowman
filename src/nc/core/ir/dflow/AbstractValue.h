@@ -83,7 +83,7 @@ public:
      *
      * \param x Sized value.
      */
-    AbstractValue(const SizedValue &x):
+    explicit AbstractValue(const SizedValue &x):
         size_(x.size()), zeroBits_(x.value() ^ bitMask<ConstantValue>(size_)), oneBits_(x.value())
     {}
 
@@ -212,7 +212,7 @@ private:
     template<class T>
     class SignedT: public T {
     public:
-        SignedT(const T& that): T(that) {}
+        explicit SignedT(const T& that): T(that) {}
     };
 
     /**
