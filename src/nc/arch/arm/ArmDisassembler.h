@@ -26,7 +26,7 @@ class ArmDisassembler: public core::arch::Disassembler {
     int mode_;
 
 public:
-    explicit ArmDisassembler(const ArmArchitecture *architecture);
+    ArmDisassembler(const ArmArchitecture *architecture);
 
     virtual ~ArmDisassembler();
 

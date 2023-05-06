@@ -83,7 +83,7 @@ public:
      *
      * \param x Sized value.
      */
-    explicit AbstractValue(const SizedValue &x):
+    AbstractValue(const SizedValue &x):
         size_(x.size()), zeroBits_(x.value() ^ bitMask<ConstantValue>(size_)), oneBits_(x.value())
     {}
 
